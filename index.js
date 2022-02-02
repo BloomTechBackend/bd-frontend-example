@@ -29,6 +29,7 @@ window.onload = async function(evt) {
     }
   }).then((res) => {
     console.log(res.data);
+    document.querySelector("#loading-icon").remove();
     populatePlaylists(res.data.playlists);
   })
 }

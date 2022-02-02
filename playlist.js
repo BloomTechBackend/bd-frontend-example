@@ -32,6 +32,7 @@ window.onload = async function(evt) {
     }
   }).then(res => {
     console.log(res);
+    document.querySelector("#loading-icon").remove();
     if (!res.data) {
       throw "No data for playlist with id:" + id;
     }
