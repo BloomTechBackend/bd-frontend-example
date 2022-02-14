@@ -43,8 +43,8 @@ function populatePlaylists(playlistData) {
 
     a.setAttribute('href', `./playlist.html?id=${playlist.id}`);
 
-    a.appendChild(text);
-    li.appendChild(a);
-    playlistsList.appendChild(li);
+    a.append(text);
+    li.append(a);
+    playlistsList.append(li);
   }
 }
